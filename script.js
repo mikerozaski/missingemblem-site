@@ -1,25 +1,57 @@
-// Automatic language detection (browser preferred)
-const langButtons = document.querySelectorAll("nav button");
-const userLang = navigator.language.slice(0,2);
-const supportedLangs = ["en","de","es","pt","ru"];
-const defaultLang = supportedLangs.includes(userLang) ? userLang : "en";
+/* ===========================
+   Missing Emblem - i18n Script
+   =========================== */
 
-async function loadLang(lang) {
-  const res = await fetch(`translations/${lang}.json`);
-  const data = await res.json();
-  document.getElementById("title").textContent = data.title;
-  document.getElementById("subtitle").textContent = data.subtitle;
-  document.getElementById("section_about_title").textContent = data.about_title;
-  document.getElementById("section_about_text").textContent = data.about_text;
-  document.getElementById("section_work_title").textContent = data.work_title;
-  document.getElementById("section_work_text").textContent = data.work_text;
+const defaultLang = 'en';
+const supportedLangs = ['en', 'de', 'es', 'pt', 'ru', 'fa'];
+let currentLang = localStorage.getItem('lang') || defaultLang;
+
+/* ---------- Load Translations ---------- */
+async function loadTranslations(lang) {
+  if (!supportedLangs.includes(lang)) lang = defaultLang;
+
+  try {
+    const response = await fetch(`translations/${lang}.json?v=${Date.now()}`);
+    const data = await response.json();
+    applyTranslations(data);
+    document.documentElement.lang = lang;
+    localStorage.setItem('lang', lang);
+
+    // RTL toggle for Persian
+    if (lang === 'fa') {
+      document.documentElement.setAttribute('dir', 'rtl');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+    }
+  } catch (err) {
+    console.error('Translation load error:', err);
+  }
 }
 
-loadLang(defaultLang);
+/* ---------- Apply Translations to DOM ---------- */
+function applyTranslations(dictionary) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dictionary[key]) el.textContent = dictionary[key];
+  });
+}
 
-langButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const lang = btn.getAttribute("data-lang");
-    loadLang(lang);
+/* ---------- Change Language from Selector ---------- */
+function changeLanguage(lang) {
+  if (supportedLangs.includes(lang)) {
+    loadTranslations(lang);
+  }
+}
+
+/* ---------- Initialize Page ---------- */
+document.addEventListener('DOMContentLoaded', () => {
+  loadTranslations(currentLang);
+
+  // Optional: attach to dropdown or buttons
+  document.querySelectorAll('[data-lang]').forEach(button => {
+    button.addEventListener('click', () => {
+      const chosenLang = button.getAttribute('data-lang');
+      changeLanguage(chosenLang);
+    });
   });
 });
