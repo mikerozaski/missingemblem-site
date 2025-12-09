@@ -1,56 +1,98 @@
-body {
+/* Font + basic reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Inter', sans-serif;
-  color: #e0e9e5;
-  background: url("img/texture_bg.webp") repeat center center fixed;
+  color: #e7f2ef;
+  background: url("img/texture_bg.webp") repeat center center;
   background-size: cover;
+  line-height: 1.6;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(9,45,56,0.9);
   padding: 1rem 2rem;
-  background: rgba(0, 30, 40, 0.8);
+  backdrop-filter: blur(4px);
 }
 
-.logo {
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-container img {
   height: 48px;
 }
+.site-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
 
-nav button {
+.lang-nav button {
   background: transparent;
-  border: 1px solid #58a399;
-  color: #58a399;
-  padding: 5px 10px;
-  margin-left: 6px;
+  border: 1px solid #66c5b3;
+  color: #66c5b3;
+  padding: 6px 10px;
+  margin-left: 5px;
+  font-size: 0.9rem;
   cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
-nav button:hover {
-  background: #58a399;
-  color: #081b17;
+.lang-nav button:hover {
+  background: #66c5b3;
+  color: #092d38;
 }
 
-.banner {
-  text-align: center;
+/* Hero section */
+.hero {
   position: relative;
+  text-align: center;
+  overflow: hidden;
 }
-.banner img {
+.hero .banner {
   width: 100%;
   height: auto;
-  opacity: 0.25;
+  opacity: 0.3;
 }
-.banner h1 {
+.hero-text {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
 }
-.banner p {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2rem;
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-text p {
+  font-size: 1.3rem;
+  margin-top: 12px;
+}
+
+/* Content sections */
+.about, .portfolio {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+.about h2, .portfolio h2 {
+  color: #9dd4c9;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+footer {
+  text-align: center;
+  background: rgba(9,45,56,0.9);
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #66c5b3;
 }
