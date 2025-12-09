@@ -1,8 +1,37 @@
 {
-  "title": "Das wiederentdeckte Symbol",
-  "subtitle": "Identität durch Design und Bedeutung erforschen.",
-  "about_title": "Über Missing Emblem",
-  "about_text": "Missing Emblem ist eine kreative Initiative, die vergessene Symbole und Ideen durch moderne digitale Kunst und Design wiederbelebt.",
-  "work_title": "Unsere Arbeit",
-  "work_text": "Wir gestalten visuelle Geschichten, die kulturelles Gedächtnis mit moderner Ästhetik verbinden."
+  "nav_home": "Startseite",
+  "nav_store": "Shop",
+  "nav_about": "Über uns",
+  "nav_gallery": "Galerie",
+  "nav_order": "Bestellung",
+
+  "hero_title": "Wir restaurieren die verlorenen Embleme der Automobilgeschichte.",
+  "hero_subtitle": "Authentische Restaurierungen für Sammler und Liebhaber.",
+
+  "cta_explore": "Kollektion ansehen",
+  "cta_order": "Restaurierung anfragen",
+
+  "about_title": "Unsere Geschichte",
+  "about_p1": "Missing Emblem wurde von Handwerkern gegründet, die alte Automobildesigns wiederbeleben.",
+  "about_p2": "Wir kombinieren traditionelle Techniken mit moderner Präzision für authentische Ergebnisse.",
+
+  "store_title": "Klassische Embleme – Shop",
+  "store_filter_all": "Alle",
+  "store_filter_emblems": "Embleme",
+  "store_filter_badges": "Abzeichen",
+  "store_filter_trims": "Zierleisten",
+  "store_filter_decals": "Aufkleber",
+
+  "gallery_title": "Restaurierungsgalerie",
+  "gallery_subtitle": "Jedes Emblem erzählt eine Geschichte – von rostig zu glänzend.",
+
+  "order_title": "Bestellung / Restaurierungsanfrage",
+  "order_subtitle": "Reichen Sie Ihr Projekt ein – wir restaurieren Ikonen der Automobilgeschichte.",
+  "order_name": "Vollständiger Name",
+  "order_email": "E-Mail-Adresse",
+  "order_brand": "Automarke",
+  "order_year": "Baujahr",
+  "order_description": "Beschreibung / Hinweise",
+  "order_upload": "Fotos hochladen",
+  "order_send": "Anfrage senden"
 }
