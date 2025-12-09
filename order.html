@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Order a restored classic car emblem or request a custom restoration — genuine craftsmanship by Missing Emblem.">
+  <meta name="keywords" content="order car emblem, emblem restoration order, classic badge repair, custom emblem request, missing emblem contact">
+  <meta property="og:title" content="Order Restoration — Missing Emblem Workshop">
+  <meta property="og:description" content="Place your order or request a restoration for classic car emblems. Fully authentic restorations with global shipping.">
+  <meta property="og:image" content="img/banner.webp">
+  <meta name="theme-color" content="#092d38">
+  <link rel="icon" href="img/icon_symbol.png" type="image/png">
+  <title>Order — Missing Emblem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Missing Emblem logo">
+      <span class="site-title">Missing Emblem</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="store.html" class="nav-link">Store</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <nav class="lang-nav">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="pt">PT</button>
+      <button data-lang="ru">RU</button>
+    </nav>
+  </header>
+
+  <main class="order-page">
+    <section class="order-header">
+      <h1 id="order_title">Place Your Order</h1>
+      <p id="order_subtitle">Request a restoration or purchase a missing emblem directly from our workshop.</p>
+    </section>
+
+    <section class="order-form-section">
+      <form id="order_form" class="order-form" action="#" method="post" enctype="multipart/form-data">
+        <h2 id="order_form_title">Order / Restoration Request Form</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required aria-label="Full name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com" required aria-label="Email">
+
+        <label for="brand">Car Brand</label>
+        <input type="text" id="brand" name="brand" placeholder="e.g., Ford, Porsche" aria-label="Car brand">
+
+        <label for="year">Year of Vehicle</label>
+        <input type="number" id="year" name="year" placeholder="e.g., 1967" aria-label="Vehicle year">
+
+        <label for="description">Description / Notes</label>
+        <textarea id="description" name="description" rows="5" placeholder="Tell us more about the emblem or restoration needs..."></textarea>
+
+        <label for="photo">Upload Photos</label>
+        <input type="file" id="photo" name="photo" accept="image/*" aria-label="Upload photos">
+
+        <button type="submit" class="btn main-btn" id="order_submit_btn">Send Request</button>
+      </form>
+    </section>
+
+    <section class="order-info">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Fill out the form above with your vehicle and emblem details.</li>
+        <li>Our team reviews your request within 24 hours.</li>
+        <li>We provide a quotation and estimated restoration time.</li>
+      </ol>
+      <p>We handle classic and vintage parts with the utmost care and ensure authenticity in every restoration.</p>
+    </section>
+
+    <section class="contact-links">
+      <h2>Conta</h2>
+      <p>Email: <a href="mailto:orders@missingemblem.com">orders@missingemblem.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/missingemblem" rel="noopener"> @missingemblem </a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Missing Emblem — Authentic restorations & global delivery.</p>
+  </footer>
+</body>
+</html>
