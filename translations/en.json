@@ -1,8 +1,37 @@
 {
-  "title": "The Symbol Rediscovered",
-  "subtitle": "Exploring identity through design and meaning.",
-  "about_title": "About Missing Emblem",
-  "about_text": "Missing Emblem is a creative initiative dedicated to reviving forgotten symbols and ideas through modern digital art and design.",
-  "work_title": "Our Work",
-  "work_text": "We craft visual stories that bridge the gap between cultural memory and modern aesthetics."
+  "nav_home": "Home",
+  "nav_store": "Store",
+  "nav_about": "About",
+  "nav_gallery": "Gallery",
+  "nav_order": "Order",
+
+  "hero_title": "Restoring the lost emblems of automotive history.",
+  "hero_subtitle": "Authentic restorations for collectors and enthusiasts.",
+
+  "cta_explore": "Explore our collection",
+  "cta_order": "Request a Restoration",
+
+  "about_title": "Our Story",
+  "about_p1": "Founded by craftsmen, Missing Emblem revives original designs of automotive marques.",
+  "about_p2": "We use traditional techniques combined with modern precision to bring authenticity back.",
+
+  "store_title": "Classic Emblems Store",
+  "store_filter_all": "All",
+  "store_filter_emblems": "Emblems",
+  "store_filter_badges": "Badges",
+  "store_filter_trims": "Trims",
+  "store_filter_decals": "Decals",
+
+  "gallery_title": "Restoration Gallery",
+  "gallery_subtitle": "Each emblem tells a story — from rusted to revived.",
+
+  "order_title": "Order / Restoration Request",
+  "order_subtitle": "Submit your project — we restore icons of automotive history.",
+  "order_name": "Full Name",
+  "order_email": "Email Address",
+  "order_brand": "Car Brand",
+  "order_year": "Year of Vehicle",
+  "order_description": "Description / Notes",
+  "order_upload": "Upload Photos",
+  "order_send": "Send Request"
 }
