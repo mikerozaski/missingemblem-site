@@ -1,63 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Missing Emblem — a restoration studio bringing back the lost beauty of classic car badges and trims.">
-  <meta name="keywords" content="about Missing Emblem, car badge restoration, classic emblem workshop, automotive heritage">
-  <meta property="og:title" content="About Missing Emblem — Classic Car Restoration Studio">
-  <meta property="og:description" content="Learn the story behind Missing Emblem — where lost automotive symbols find new life.">
-  <meta property="og:image" content="img/banner.webp">
-  <meta name="theme-color" content="#092d38">
-  <link rel="icon" type="image/png" href="img/icon_symbol.png">
-  <title>About — Missing Emblem</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <title>About – Missing Emblem</title>
+  <link rel="stylesheet" href="styles.css?v=8">
+  <script src="script.js?v=8" defer></script>
+
+  <!-- 🌍 SEO Meta -->
+  <meta name="description" content="Discover the story behind Missing Emblem. We restore history through classic car emblems with precision craftsmanship.">
+  <meta name="keywords" content="missing emblem, classic car restoration, automotive heritage, badge restoration, emblem repair">
+  <meta name="robots" content="index, follow">
+
+  <!-- Alternate hreflang Links -->
+  <link rel="alternate" hreflang="en" href="https://missingemblem.com/about.html?lang=en" />
+  <link rel="alternate" hreflang="de" href="https://missingemblem.com/about.html?lang=de" />
+  <link rel="alternate" hreflang="es" href="https://missingemblem.com/about.html?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://missingemblem.com/about.html?lang=pt" />
+  <link rel="alternate" hreflang="ru" href="https://missingemblem.com/about.html?lang=ru" />
+  <link rel="alternate" hreflang="fa" href="https://missingemblem.com/about.html?lang=fa" />
+  <link rel="alternate" hreflang="x-default" href="https://missingemblem.com/about.html" />
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="About – Missing Emblem">
+  <meta property="og:description" content="Restoring authenticity in every classic emblem. Learn about our story and passion for automotive heritage.">
+  <meta property="og:image" content="https://missingemblem.com/img/banner.webp">
+  <meta property="og:url" content="https://missingemblem.com/about.html">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="img/logo.png" alt="Missing Emblem logo">
-      <span class="site-title">Missing Emblem</span>
-    </div>
+  <div class="background-texture"></div>
 
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="store.html" class="nav-link">Store</a>
-      <a href="gallery.html" class="nav-link">Gallery</a>
-      <a href="order.html" class="nav-link">Order</a>
-    </nav>
-
-    <nav class="lang-nav">
-      <button data-lang="en">EN</button>
-      <button data-lang="de">DE</button>
-      <button data-lang="es">ES</button>
-      <button data-lang="pt">PT</button>
-      <button data="ru">RU</button>
+  <header class="main-header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Missing Emblem Logo">
+    </a>
+    <nav class="language-switcher">
+      <select id="lang-select"></select>
     </nav>
   </header>
 
-  <main class="about">
-    <section class="about-hero">
-      <img src="img/workshop.webp" alt="Missing Emblem workshop photo">
-      <div class="overlay-text">
-        <h1 id="about_title"></h1>
-        <p id="about_subtitle"></p>
+  <main class="content">
+    <section class="about-section">
+      <h1 data-i18n="about_title">About Missing Emblem</h1>
+      <p data-i18n="about_intro">
+        Founded by enthusiasts, we preserve automotive history one emblem at a time.
+      </p>
+
+      <div class="story-block">
+        <h2 data-i18n="about_story_title">Our Story</h2>
+        <p data-i18n="about_story_text">
+          Missing Emblem began with a single lost badge from a classic car — a symbol of forgotten craftsmanship.
+          Today we restore emblems for collectors and restorers worldwide, combining artisanal techniques with modern durability.
+        </p>
+      </div>
+
+      <div class="mission-block">
+        <h2 data-i18n="about_mission_title">Our Mission</h2>
+        <p data-i18n="about_mission_text">
+          To revive authenticity and detail in vintage automotive emblems — giving every restored car its lost character back.
+        </p>
+      </div>
+
+      <div class="values-block">
+        <h2 data-i18n="about_values_title">Values</h2>
+        <ul>
+          <li data-i18n="about_value1">Craftsmanship above all</li>
+          <li data-i18n="about_value2">Respect for automotive heritage</li>
+          <li data-i18n="about_value3">Precision and sustainability in restoration</li>
+        </ul>
       </div>
     </section>
+  </main>
 
-    <section class="about-content">
-      <h2 id="about_story_title"></h2>
-      <p id="about_story_text"></p>
-      
-      <h2 id="about_values_title"></h2>
-      <ul id="about_values_list">
-        <li>Precision in restoration</li>
-        <li>Authenticity guaranteed</li>
-        <li>Passion for automotive design</li>
-      </ul>
-
-      <h2 id="about_team_title"></h2>
-      <div class="team-grid">
-        <div class="team
+  <footer class="main-footer">
+    <p>© 2025 <span data-i18n="brand_name">Missing Emblem</span></p>
+  </footer>
+</body>
+</html>
