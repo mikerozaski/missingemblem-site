@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+#app {
+  font-size: 2em;
+}
