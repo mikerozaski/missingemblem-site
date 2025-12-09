@@ -3,30 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="cache-breaker" content="v7">
-  <title>Missing Emblem</title>
+  <meta name="description" content="Missing Emblem — a creative laboratory exploring identity and symbolism through design.">
+  <meta name="keywords" content="Missing Emblem, design, symbolism, creative studio, identity, logo, art">
+  <meta property="og:title" content="Missing Emblem — The Symbol Rediscovered">
+  <meta property="og:description" content="A creative initiative exploring the lost symbols and identities through modern art and design.">
+  <meta property="og:image" content="img/banner.webp">
+  <meta name="theme-color" content="#092d38">
+  <link rel="icon" type="image/png" href="img/icon_symbol.png">
+  <title>Missing Emblem — Rediscover the Symbol</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <header>
-    <img class="logo" src="img/logo.png" alt="Missing Emblem logo">
-    <nav>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Missing Emblem logo">
+      <span class="site-title">Missing Emblem</span>
+    </div>
+    <nav class="lang-nav">
       <button data-lang="en">EN</button>
-      <button data-lang="fa">FA</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="pt">PT</button>
+      <button data-lang="ru">RU</button>
     </nav>
   </header>
 
   <main>
-    <section class="banner">
-      <img src="img/banner.webp" alt="Site banner">
-      <h1 id="title"></h1>
-      <p id="subtitle"></p>
+    <section class="hero">
+      <img class="banner" src="img/banner.webp" alt="Creative banner">
+      <div class="hero-text">
+        <h1 id="title"></h1>
+        <p id="subtitle"></p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 id="section_about_title"></h2>
+      <p id="section_about_text"></p>
+    </section>
+
+    <section class="portfolio">
+      <h2 id="section_work_title"></h2>
+      <p id="section_work_text"></p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Missing Emblem</p>
+    <p>&copy; 2025 Missing Emblem — Crafted with meaning and light.</p>
   </footer>
 </body>
 </html>
