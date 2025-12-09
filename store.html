@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop authentic restored car emblems, vintage badges, and decorative trims for classic vehicles.">
+  <meta name="keywords" content="classic car emblems, automotive badges, vintage trims, restoration, shop">
+  <meta property="og:title" content="Store — Missing Emblem Classic Car Parts">
+  <meta property="og:description" content="Browse our collection of authentic car emblems and vintage trims restored with precision. Worldwide shipping available.">
+  <meta property="og:image" content="img/banner.webp">
+  <meta name="theme-color" content="#092d38">
+  <link rel="icon" type="image/png" href="img/icon_symbol.png">
+  <title>Store — Missing Emblem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Missing Emblem logo">
+      <span class="site-title">Missing Emblem</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="order.html" class="nav-link">Order</a>
+    </nav>
+
+    <nav class="lang-nav">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="pt">PT</button>
+      <button data-lang="ru">RU</button>
+    </nav>
+  </header>
+
+  <main class="store">
+    <section class="store-header">
+      <h1 id="store_title">Classic Car Emblems & Badges</h1>
+      <p id="store_subtitle">Restored to preserve automotive heritage.</p>
+    </section>
+
+    <section class="filters">
+      <h2>Filter by Category</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-cat="all">All</button>
+        <button class="filter-btn" data-cat="emblems">Emblems</button>
+        <button class="filter-btn" data-cat="badges">Badges</button>
+        <button class="filter-btn" data-cat="trims">Trims</button>
+        <button class="filter-btn" data-cat="decals">Decals</button>
+      </div>
+    </section>
+
+    <section id="product-list" class="product-grid">
+      <!-- Products will be dynamically loaded here -->
+      <!-- Example static fallback for SEO and first render: -->
+      <article class="product-card" data-cat="emblems">
+        <img src="img/products/ford1958.webp" alt="Restored Ford 1958 emblem chrome">
+        <h3>Ford Emblem 1958</h3>
+        <p>$120</p>
+        <a href="product.html?id=ford1958" class="btn-small">View</a>
+      </article>
+
+      <article class="product-card" data-cat="badges">
+        <img src="img/products/chevy1967.webp" alt="Original Chevrolet 1967 badge restored">
+        <h3>Chevrolet Emblem 1967</h3>
+        <p>$95</p>
+        <a href="product.html?id=chevy1967" class="btn-small">View</a>
+      </article>
+
+      <article class="product-card" data-cat="trims">
+        <img src="img/products/mercedes1970.webp" alt="Mercedes 1970 trim piece polished">
+        <h3>Mercedes Trim 1970</h3>
+        <p>$140</p>
+        <a href="product.html?id=mercedes1970" class="btn-small">View</a>
+      </article>
+
+      <article class="product-card" data-cat="decals">
+        <img src="img/products/porsche1975.webp" alt="Porsche 1975 emblem decal restored">
+        <h3>Porsche Emblem 1975</h3>
+        <p>$110</p>
+        <a href="product.html?id=porsche1975" class="btn-small">View</a>
+      </article>
+    </section>
+
+    <section class="store-info">
+      <h2>Worldwide Shipping</h2>
+       ship authentic parts internationally with secure packaging and authenticity certificates included.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;
