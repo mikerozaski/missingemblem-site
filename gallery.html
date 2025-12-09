@@ -1,96 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gallery of restored classic car emblems — before and after restoration by Missing Emblem workshop.">
-  <meta name="keywords" content="restored emblems gallery, car badges restoration before after, classic car workshop showcase">
-  <meta property="og:title" content="Gallery — Missing Emblem Restorations">
-  <meta property="og:description" content="Explore our gallery of authentic car emblem restorations — see transformations from worn to pristine.">
-  <meta property="og:image" content="img/banner.webp">
-  <meta name="theme-color" content="#092d38">
-  <link rel="icon" type="image/png" href="img/icon_symbol.png">
-  <title>Gallery — Missing Emblem</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <title>Gallery – Missing Emblem</title>
+  <link rel="stylesheet" href="styles.css?v=9">
+  <script src="script.js?v=9" defer></script>
+
+  <!-- 🌍 SEO Meta -->
+  <meta name="description" content="Showcase of replacement emblems and classic reproductions offered by Missing Emblem. Handmade, accurate replacements for vintage cars.">
+  <meta name="keywords" content="replacement car emblem, classic badge, reproduction emblem, vintage cars, missing emblem store">
+  <meta name="robots" content="index, follow">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://missingemblem.com/gallery.html?lang=en" />
+  <link rel="alternate" hreflang="de" href="https://missingemblem.com/gallery.html?lang=de" />
+  <link rel="alternate" hreflang="es" href="https://missingemblem.com/gallery.html?lang=es" />
+  <link rel="alternate" hreflang="pt" href="https://missingemblem.com/gallery.html?lang=pt" />
+  <link rel="alternate" hreflang="ru" href="https://missingemblem.com/gallery.html?lang=ru" />
+  <link rel="alternate" hreflang="fa" href="https://missingemblem.com/gallery.html?lang=fa" />
+  <link rel="alternate" hreflang="x-default" href="https://missingemblem.com/gallery.html" />
+
+  <!-- Social Info -->
+  <meta property="og:title" content="Gallery – Missing Emblem">
+  <meta property="og:description" content="Browse our collections of high-quality replacement emblems for classic vehicles.">
+  <meta property="og:image" content="https://missingemblem.com/img/banner.webp">
+  <meta property="og:url" content="https://missingemblem.com/gallery.html">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="img/logo.png" alt="Missing Emblem logo">
-      <span class="site-title">Missing Emblem</span>
-    </div>
+  <div class="background-texture"></div>
 
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="store.html" class="nav-link">Store</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="order.html" class="nav-link">Order</a>
-    </nav>
-
-    <nav class="lang-nav">
-      <button data-lang="en">EN</button>
-      <button data-lang="de">DE</button>
-      <button data-lang="es">ES</button>
-      <button data-lang="pt">PT</button>
-      <button data-lang="ru">RU</button>
+  <header class="main-header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Missing Emblem Logo">
+    </a>
+    <nav class="language-switcher">
+      <select id="lang-select"></select>
     </nav>
   </header>
 
-  <main class="gallery-page">
-    <section class="gallery-header">
-      <h1 id="gallery_title">Restoration Gallery</h1>
-      <p id="gallery_subtitle">Each emblem tells a story — from rusted to revived.</p>
-    </section>
+  <main class="content">
+    <section class="gallery-section">
+      <h1 data-i18n="gallery_title">Replacement Emblem Gallery</h1>
+      <p data-i18n="gallery_intro">
+        Explore some of our available emblem reproductions — precisely remade and ready for installation.
+      </p>
 
-    <section class="gallery-grid">
-      <figure class="gallery-item">
-        <img src="img/gallery/ford1958_before.webp" alt="Ford 1958 emblem before restoration" loading="lazy">
-        <img src="img/gallery/ford1958_after.webp" alt="Ford 1958 emblem after restoration" loading="lazy">
-        <figcaption>
-          <h3>Ford Emblem — 1958</h3>
-          <p>Complete chrome restoration and enamel detailing.</p>
-        </figcaption>
-      </figure>
+      <div class="gallery-grid">
 
-      <figure class="gallery-item">
-        <img src="img/gallery/chevy1967_before.webp" alt="Chevrolet 1967 badge before restoration" loading="lazy">
-        <img src="img/gallery/chevy1967_after.webp" alt="Chevrolet 1967 badge after restoration" loading="lazy">
-        <figcaption>
-          <h3>Chevrolet Badge — 1967</h3>
-          <p>Authentic badge restoration with paint retouching and polishing.</p>
-        </figcaption>
-      </figure>
+        <!-- Item Example 1 -->
+        <div class="gallery-item">
+          <img src="img/sample.jpg" alt="Ford Mustang Emblem Replacement">
+          <h2 data-i18n="gallery_item1_title">Ford Mustang Rear Emblem</h2>
+          <p data-i18n="gallery_item1_desc">
+            Accurate reproduction of 1967 Mustang rear badge — chrome finish, high-detail casting.
+          </p>
+          <span class="tag" data-i18n="gallery_tag_new">New reproduction</span>
+        </div>
 
-      <figure class="gallery-item">
-        <img src="img/gallery/porsche1975_before.webp" alt="Porsche 1975 emblem before restoration" loading="lazy">
-        <img src="img/gallery/porsche1975_after.webp" alt="Porsche 1975 emblem after restoration" loading="lazy">
-        <figcaption>
-          <h3>Porsche Crest — 1975</h3>
-          <p>Precision rebuilt crest with gold accents re‑plating.</p>
-        </figcaption>
-      </figure>
+        <!-- Item Example 2 -->
+        <div class="gallery-item">
+          <img src="img/sample.jpg" alt="Mercedes Vintage Badge">
+          <h2 data-i18n="gallery_item2_title">Mercedes-Benz Front Ornament</h2>
+          <p data-i18n="gallery_item2_desc">
+            Replacement for W115 hood emblem — durable stainless reproduction, fits OEM socket.
+          </p>
+          <span class="tag" data-i18n="gallery_tag_rarepiece">Rare replacement</span>
+        </div>
 
-      <figure class="gallery-item">
-        <img src="img/gallery/mercedes1970_before.webp" alt="Mercedes 1970 trim before restoration" loading="lazy">
-        <img src="img/gallery/mercedes1970_after.webp" alt="Mercedes 1970 trim after restoration" loading="lazy">
-        <figcaption>
-          <h3>Mercedes Trim — 1970</h3>
-          <p>Polished alloy surface and original geometric refinement restored.</p>
-        </figcaption>
-      </figure>
-    </section>
+        <!-- Item Example 3 -->
+        <div class="gallery-item">
+          <img src="img/sample.jpg" alt="Porsche Crest Replacement">
+          <h2 data-i18n="gallery_item3_title">Porsche Classic Crest</h2>
+          <p data-i18n="gallery_item3_desc">
+            Faithful remake of early 911 hood badge — gold-plated aluminum version.
+          </p>
+          <span class="tag" data-i18n="gallery_tag_limited">Limited edition</span>
+        </div>
 
-    <section class="cta-section">
-      <h2>Want Your Emblem Restored?</h2>
-      <p>Send us a photo or inquiry — our experts will revive your car’s missing emblem.</p>
-      <a href="order.html" class="btn mai">Start Restoration</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Missing Emblem — Bringing lost automotive icons back to life.</p>
+  <footer class="main-footer">
+    <p>© 2025 <span data-i18n="brand_name">Missing Emblem</span></p>
   </footer>
 </body>
 </html>
+
