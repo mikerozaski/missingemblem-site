@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detailed view of a restored classic car emblem — premium quality, authentic restoration, and worldwide shipping.">
+  <meta name="keywords" content="classic car emblem, restored badge, vintage trim, automotive restoration, product details">
+  <meta property="og:title" content="Classic Car Emblem — Product Details | Missing Emblem">
+  <meta property="og:image" content="img/banner.webp">
+  <meta property="og:description" content="Discover restored vintage emblems and badges from Missing Emblem. Full specs, photos, and order options.">
+  <meta name="theme-color" content="#092d38">
+  <link rel="icon" href="img/icon_symbol.png" type="image/png">
+  <title>Product — Missing Emblem</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "brand": "Missing Emblem",
+    "category": "Classic Car Restoration Parts",
+    "image": "img/products/ford1958.webp",
+    "name": "Ford Emblem 1958",
+    "sku": "FORD-1958",
+    "description": "Authentically restored Ford 1958 emblem with polished chrome finish and detail-accurate design.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "USD",
+      "price": "120.00",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="Missing Emblem logo">
+      <span class="site-title">Missing Emblem</span>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="store.html" class="nav-link">Store</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="order.html" class="nav-link">Order</a>
+    </nav>
+
+    <nav class="lang-nav">
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="pt">PT</button>
+      <button data-lang="ru">RU</button>
+    </nav>
+  </header>
+
+  <main class="product-page">
+    <section class="product-hero">
+      <img id="product_image" src="img/products/ford1958.webp" alt="Restored Ford 1958 emblem">
+    </section>
+
+    <section class="product-details">
+      <h1 id="product_name">Ford Emblem 1958</h1>
+      <p id="product_description">
+        Authentically restored Ford 1958 emblem — superior chrome finish and detail fidelity to factory specifications.
+      </p>
+
+      <ul class="product-specs">
+        <li><strong>Year:</strong> 1958</li>
+        <li><strong>Brand:</strong> Ford</li>
+        <li><strong>Material:</strong> Chrome-plated alloy</li>
+        <li><strong>Restored by:</strong> Missing Emblem Workshop</li>
+        <li><strong>Condition:</strong> Fully restored, mint grade</li>
+      </ul>
+
+      <div class="product-price">
+        <p class="price-label">Price:</p>
+        <p class="price-value">$120</p>
+      </div>
+
+      <a href="order.html?id=ford1958" class="btn main-btn" id="product_order_btn">Order / Inquiry</a>
+    </section>
+
+    <section class="product-gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <img src="img/products/ford1958_1.webp" alt="Ford emblem 1958 close-up" loading="lazy">
+        <img src="img/products/ford1958_2.webp" alt="Ford emblem 1958 rear view" loading="lazy">
+        <img src="img/products/ford1958_3.webp" alt="Ford emblem 1958 mounted example" loading="lazy">
+      </div>
+    </section>
+
+    <section class="related-products">
+      <h2>Related Products</h2>
+      <div class="product-grid small">
+        <article>
+          <img src="img/products/chevy1967.webp" alt="Chevrolet 1967 emblem restored">
+          <h3>Chevrolet Emblem 1967</h3>
+          <a href="product.html?id=chevy1967" class="btn-small">View</a>
+        </article>
+        <article>
+          <img src="img/products/mercedes1970.webp" alt="Mercedes 1970 trim restored">
+          <h3>Mercedes Trim 1970</h3>
+          <a href="product.html?id=mercedes1970" class="btn-small">View</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Missing Emblem — Restoring automotive legends worldwide.</p>
+  </footer>
+
+  <script>
+    // Optional: dynamic assignment ID in query string
+    const params = new URLSearchParams(window.location.search);
+    const pid = params.get('id');
+    if (pid) {
+      // Example data could later be loaded from JSON
+      console.log("Product ID:", pid);
+    }
+  </script>
+</body>
+</html>
