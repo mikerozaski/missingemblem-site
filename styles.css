@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600&display=swap" rel="stylesheet">
+
 /* Font + basic reset */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 * {
@@ -28,6 +30,33 @@ header {
   align-items: center;
   gap: 10px;
 }
+
+
+/* ======= RTL Support (Persian) ======= */
+html[lang="fa"] {
+  direction: rtl;
+  text-align: right;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+/* برای اطمینان از چپ‌چین بودن در زبان‌های دیگر */
+html:not([lang="fa"]) {
+  direction: ltr;
+  text-align: left;
+}
+
+/* نمونه تنظیمات ساده متن‌ها */
+body {
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #111;
+}
+
+/* لینک‌ها و دکمه برای زبان فارسی */
+[lang="fa"] a, [lang="fa"] button {
+  font-weight: 600;
+}
+
 .logo-container img {
   height: 48px;
 }
